@@ -3,12 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabarito - Alinhamento em Tabelas</title>
-   
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            /* lagura */
+            width: 400px;
+            /* Altura */
+            height: 400px;
+            /* Para unir as linhas entre as celulas */
+            border-collapse: collapse;
+        }
+        
+
+        td {
+            border: 2px solid black;
+            padding: 8px;
+            /* Alinhamento horizontal 
+                - center - centro
+                - left - esquerda
+                - right - direita
+            */
+            text-align: center;
+            /* Alinhamento vertical
+                - top - em cima
+                - bottom - em baixo
+                - middle - no centro
+            */
+            vertical-align: middle;
+        }
+
+        .alinhamento{
+            text-align: left;
+            background-color: green;
+        }
+
+        .topo{
+            vertical-align: top;
+            text-align: top;
+            background-color: aqua;
+        }
+
+        .baixo{
+            vertical-align: bottom;
+            text-align:bottom;
+            background-color: aquamarine;
+        }
+
+        .direita{
+            text-align:right;
+            background-color: blueviolet;
+
+        }
+        
+
+
+
+        
+
+        .numero{
+            text-align: right;
+        }
+
+
+
+    </style>
 </head>
 <body>
-    <h1>Gabarito - Trabalhando com alinhamento</h1>
+    <h1>Minha primeira tabela</h1>
+    <!-- É utilzado para criar organização de dados -->
+    <!-- 
+        Hierarquia de tabelas (Simples)
+        Table = tabela
+            Table Row = Linha da tabela
+                Table Header = cabeçalho de tabela Data = dado da tabela Data = dado da tabela
+    -->
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td class="alinhamento" >A1</td>
+            <td>B1</td>
+            <td class="direita">C1</td>
+        </tr> <!-- Segunda linha -->
+        <tr class="linha">
+            <td class="topo">A2</td>
+            <td>B2</td>
+            <td class="baixo">C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td class="topo">A3</td>
+            <td class="baixo">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="direita">1000</td>
+            <td>C4</td>
+        </tr>
+    </table>
     
-  
 </body>
 </html>
